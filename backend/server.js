@@ -11,6 +11,7 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const sparePartRoutes = require("./routes/sparePartRoutes");
+const pmRoutes = require("./routes/pmRoutes");
 
 const app = express();
 
@@ -44,6 +45,7 @@ app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/spare-parts", sparePartRoutes);
+app.use("/api/pm", pmRoutes);
 
 const PORT = process.env.PORT || 5000;
 
