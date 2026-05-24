@@ -443,3 +443,23 @@ th {
     grid-template-columns: 1fr;
   }
 }
+
+.pm-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.pm-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}

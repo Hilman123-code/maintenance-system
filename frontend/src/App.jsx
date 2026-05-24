@@ -12,6 +12,7 @@ import SpareParts from "./pages/SpareParts";
 import MainLayout from "./layouts/MainLayout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminRoute from "./components/AdminRoute";
+import PreventiveMaintenance from "./pages/PreventiveMaintenance";
 
 
 import "./index.css";
@@ -44,6 +45,7 @@ function App() {
           />
           <Route path="/reports" element={<Reports />} />
           <Route path="/spare-parts" element={<SpareParts />} />
+          <Route path="/pm" element={<PreventiveMaintenance />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/" replace />} />
